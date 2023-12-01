@@ -25,7 +25,6 @@ startButton.onclick = async () => {
       volver a obtener los datos de la api, guardarlos en el local storage y mostrarlos en el DOM
     */
     if (fechaNuevaSolicitud - fechaSolicitudPrevia > 60000) {
-      console.log("estoy entrando aqui");
       content.innerHTML = showSpinner();
       await borrarDatosDelLocalStorage();
       await almacenarDatosEnLocalStorage(url);
